@@ -3,13 +3,13 @@ import java.io.*;
 public class Person implements Serializable{
 	
 	//class variables
-	private static boolean isHuman = true;
 	private static final long serialVersionUID = 1L;
 	//instance variables
 	private String name;
 	private int age;
 	private Address address;
 	private DateOfBirth dateOfBirth;
+	private transient boolean isHuman = true;
 	
 	//constructor
 	public Person(String name, int age, Address address, DateOfBirth dateOfBirth) {

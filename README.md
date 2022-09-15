@@ -119,7 +119,7 @@ A constructor is not called during deserialization for the deserialized type obj
 A constructor is only called for the first non-serializable class in the parent hierarchy of the deserialized object.
 
 
-# Exceptions 💥:
+### Exceptions 💥:
 - The JVM ensures it deserializes the object using the correct class file by comparing the `serialVersionUID` in the class file with the one in the serialized object. If a match is not found an **InvalidClassException** is thrown. 
 - **readObject()** throws a **ClassNotFoundException** when the class of the serialized object cannot be found.
 

@@ -16,7 +16,7 @@ We will be reviewing the following topics:
 
 🛠️ This project was created with **Java8** and **Eclipse**(IDE).
 
-So you'll need a **basic knolage of Java**, an **IDE** and **Java 8 installed** and you are ready to go!
+So you'll need a **basic knowledge of Java**, an **IDE** and **Java 8 installed** and you are ready to go!
 
 [To download and install Eclipse on Windows 10](https://www.youtube.com/watch?v=N-wXTRpR03U)
 

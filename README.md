@@ -96,7 +96,7 @@ After the execution of the above program, the persons.txt will contain a stream 
 
 We’ll make use of helper classes `FileInputStream`, which helps us read a file and `ObjectInputStream` which helps us read a serialized stream of bytes.
 
-1. Initialize 'FileInputStream' and 'ObjectInputStream' in main() which **will read a file and transform a stream of bytes into a Java object**.
+1. Initialize `FileInputStream` and `ObjectInputStream` in main() which **will read a file and transform a stream of bytes into a Java object**.
 3. Create a Person object named michaelCopy by using objectInputStream.readObject() **to read a serialized object**.
 4. Created a Person object named peterCopy by using objectInputStream.readObject() **to read a serialized object**.
 

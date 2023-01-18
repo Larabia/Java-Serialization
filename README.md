@@ -7,7 +7,7 @@ You can use this project as a cheatsheet or a fast course on Java Serialization!
 
 We will be reviewing the following topics:
 - `Serializable` Java's interface.
-- The use of `FileOutputStream` and `ObjectOutputStream` to **serialize objects to a file**.
+- The use of `FileInputStream` and `ObjectInputStream` to **serialize objects to a file**.
 - The use of `FileOutputStream` and `ObjectOutputStream` to **deserialize objects from a file**.
 - `static` and `transient` fields in serialization.
 - Custom Serialization.
@@ -58,7 +58,7 @@ Although the JVM uses the `serialVersionUID` to locate the proper class, **it do
 
 ## Serialize objects to a file 📠
 
-We’ll need to use the helper classes, `FileOutputStream`, which will help us write to a file**, and `ObjectOutputStream`, which will help us write a serializable object to an output stream.
+We’ll need to use the helper classes, `FileOutputStream`, which will help us write to a file, and `ObjectOutputStream`, which will help us write a serializable object to an output stream.
 
 1. Initialize a `FileOutputStream` object **which will create and write a stream of bytes to a file** and pass the name of the file as an argument (ex: person-file.txt).
 2. Initialize an `ObjectOutputStream` object **which will help serialize an object to a specified output stream** and pass the `FileOutputStream` object as an argument.
@@ -96,9 +96,9 @@ After the execution of the above program, the persons.txt will contain a stream 
 
 We’ll make use of helper classes `FileInputStream`, which helps us read a file and `ObjectInputStream` which helps us read a serialized stream of bytes.
 
-1. Initialize a `FileOutputStream` object **which will create and write a stream of bytes to a file** and pass the name of the file as an argument (ex: person-file.txt).
-2. Initialize an `ObjectOutputStream` object **which will help serialize an object to a specified output stream** and pass the `FileOutputStream` object as an argument.
-2. Create an object by using **objectInputStream.readObject()** to read a serialized object.
+1. Initialize FileInputStream and ObjectInputStream in main() which will read a file and transform a stream of bytes into a Java object.
+2. Create a Person object named michaelCopy by using objectInputStream.readObject() to read a serialized object.
+2. Created a Person object named peterCopy by using objectInputStream.readObject() to read a serialized object.
 
 ```java
 public class Person implements Serializable {
